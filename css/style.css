@@ -1,0 +1,83 @@
+:root {
+    --bg: #fffaf3;
+    --sbg: #f1eae0;
+    --fg: #575279;
+    --accent0: #d7827e;
+    --accent1: #9ccfd8;
+    --accent2: #ea9d34;
+}
+
+body {
+    background: #fff4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.title-bar {
+
+    background: linear-gradient(90deg,#5566c2,#e691ba);
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.no-padding {
+    padding: 3px 3px 3px 3px;
+}
+.window {
+    box-shadow: inset -1px -1px #241049,inset 1px 1px #dfdfdf,inset -2px -2px rgb(134, 120, 138),inset 2px 2px #fff;
+    background: #eed2d0;
+    padding: 3px;
+    margin: 20px;
+}
+.window:hover {
+    transform: translateY(-0.2rem);
+   /* box-shadow: inset -6px -6px #2410492f,inset 1px 1px #dfdfdf,inset -2px -2px rgb(134, 120, 138),inset 2px 2px #fff;*/
+}
+.window:hover .title-bar {
+    background: linear-gradient(90deg, #5566c2, #e691ba, #f5c833) repeat scroll 0% 0% / 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ul.tree-view {
+    display: block;
+    background: #fffaf3;
+    box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+    padding: 6px;
+    margin: 0;
+
+}
+
+button {
+    background: #eed2d0;
+}
+
+img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.category-item:hover {
+    font-weight: bold;
+}
